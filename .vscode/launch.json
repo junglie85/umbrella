@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug sandbox windows",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/sandbox",
+            "environment": [
+                {
+                    "name": "CARGO_MANIFEST_DIR",
+                    "value": "${workspaceFolder}/examples/sandbox"
+                },
+                {
+                    "name": "RUST_BACKTRACE",
+                    "value": "1"
+                }
+            ],
+            "cwd": "${workspaceFolder}/examples/sandbox",
+            "console": "integratedTerminal",
+            "preLaunchTask": "build debug sandbox"
+        }
+    ]
+}

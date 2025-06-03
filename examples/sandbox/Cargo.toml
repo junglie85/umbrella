@@ -1,0 +1,7 @@
+[package]
+name = "sandbox"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+umbrella.workspace = true

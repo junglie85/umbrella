@@ -1,6 +1,12 @@
-[package]
-name = "umbrella"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["umbrella", "examples/*"]
+resolver = "3"
 
-[dependencies]
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+rust-version = "1.86"
+license = "MIT"
+
+[workspace.dependencies]
+umbrella = { version = "*", path = "umbrella" }
